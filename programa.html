@@ -1,0 +1,115 @@
+<meta charset="UTF-8">
+
+<script>
+    document.write ("Nasci no Ano:");
+    document.write (2022 - 39);
+</script>
+<br>
+<br>
+<script>
+    document.write ("A média das idades é:");
+    document.write ((20 + 22 + 28) /3);
+</script>
+<br>
+<br>
+<script>
+    document.write ("Líliam nasceu em:" + ( 2022 - 41 ));
+    document.write ("<br>")
+    document.write ("Tito nasceu em:" + ( 2022 - 39 ));
+</script>
+<br>
+<br>
+<script>
+    document.write("<h1>Seja bem-vindo</h1>");
+</script>
+<br>
+<br>
+<h1> CALCULANDO MEU GASTO </h1>
+<script>
+    document.write("A média do valor gasto com as viagens é: <br>");
+    document.write((200 + 100 + 300 + 400) /4);
+</script>
+<br>
+<script>
+    document.write("Média calculada " + 20);
+</script>
+<br>
+<script>
+        document.write("Eu acertei: " + 15/50*100 + "%" );
+</script>
+<br>
+<script>
+    var ano = 2022;
+    document.write("Flávio tem " + ( ano - 1983)  + " anos " + "<br>");
+    document.write("Joaquim tem " + ( ano - 1981)  + " anos " + "<br>");
+    document.write("Barney tem " + ( ano - 1947)  + " anos " );
+</script>
+<br>
+<br>
+<script>
+    var media = (39 + 20 + 41)/3;
+    document.write("A  media das idades é " + Math.round( media ));
+</script>
+<br>
+<br>
+<script>
+    var IDADE1 = 10;
+    var IDADE2 = "20";
+    var IDADE3 = 12;
+
+    document.write("A média das idades é <br>");
+    document.write( (IDADE1 + IDADE2 + IDADE3) / 3);
+</script>
+<br>
+<br>
+<br>
+<h3>Álcool ou Gasolina?</h3>
+<br>
+<br>
+<script>
+    function pulaLinha() {
+
+        document.write ("<br><hr><br>");
+    }
+    function escreva(texto) {
+
+        document.write (texto);
+        pulaLinha();
+    }
+
+    var Tanque = 40;
+    var caminhoComGasolina = 480;
+    var consumoDeGasolina = caminhoComGasolina / Tanque;
+    var caminhoComAlcool = 300;
+    var consumoDeAlcool = caminhoComAlcool / Tanque;
+
+    //document.write ("consumo de combustível com álcool: " + consumoDeAlcool + " km por litro ");
+    escreva("consumo de combustível com álcool: " + consumoDeAlcool + " km por litro ");
+    //document.write (" consumo de combustível com gasolina: " + consumoDeGasolina + " km por litro ");
+    escreva(" consumo de combustível com gasolina: " + consumoDeGasolina + " km por litro ");
+    //document.write (" Diferença de kilometragem entre os combustíveis: " + (consumoDeGasolina - consumoDeAlcool) + " km ");
+    escreva(" Diferença de kilometragem entre os combustíveis: " + (consumoDeGasolina - consumoDeAlcool) + " km ");
+    
+</script>
+<br>
+<br>
+<big>Gerações passadas desde o descobrimento do Brasil</big> <br><hr>
+<script>
+    function pulaLinha() {
+
+        document.write ("<br><hr><br>");
+           }
+    function escreva(texto) {
+
+        document.write ("<big>" + texto + "</big>" );
+        pulaLinha();
+    }
+
+    var media = 28;
+    var anoInicial = 1500;
+    var anoFinal = 2022;
+    var periodo = anoFinal - anoInicial;
+    var geracoes = Math.round(periodo/media);
+
+    escreva("quantidade de gerações desde o descobrimento: " + geracoes);
+</script>

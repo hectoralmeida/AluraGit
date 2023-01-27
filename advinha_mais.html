@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>COMPARE COM O NÚMERO PENSADO</button>
+
+<script>
+    // var numeros = Math.round(Math.random() * 10);
+    // var numeros = [2,5,7,10];
+    function sorteiaNumeros(quantidade) {
+        var aleatorios = [];
+        var numero = 1;
+        while (numero <= quantidade) {
+            aleatorios.push(numeros);
+            numero++; 
+        }
+        return aleatorios;
+    }
+    var numeros = sorteiaNumeros(3);
+    numeros.push(Math.round(Math.random() * 10));
+    console.log (numeros);
+    var input = document.querySelector("input");
+    input.focus();
+    function verifica() {
+        var acertou = false;
+        for (var posicao = 0; posicao < numeros.length; posicao++) {
+
+            if(input.value == numeros[posicao]) {
+            alert ("você acertou!");
+            acertou = true;
+            break;
+            } 
+        }        
+            if (acertou == false) {
+            alert ("você errou!");
+            }
+        input.value = "";
+        input.focus();
+    }
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+
+
+</script>

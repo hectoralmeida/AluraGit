@@ -1,0 +1,112 @@
+<meta charset="UTF-8">
+
+    <h1> CALCULANDO IMC </h1>
+
+<script>
+
+    function pulaLinha() {
+
+        document.write ("<br><br>");
+    }
+
+    function escreva(texto) {
+
+        document.write(texto);
+        pulaLinha();
+    }
+
+    function calculaIMC(peso,altura) {
+
+        var imc = peso / (altura * altura);
+        return imc;
+        escreva("o IMC é: " + Math.round (imc.toFixed(1)));
+    }
+
+    var peso = 103;
+    var altura = 1.75;
+    var imc = peso / (altura * altura);
+
+    escreva("o IMC é: " + Math.round (imc));
+
+    var IMC =  calculaIMC(103, 1.95)
+
+
+
+</script>
+<br>
+<br>
+<script>
+
+    function pulaLinha() {
+
+        document.write ("<br><br>");
+    }
+
+    function escreva(texto) {
+
+        document.write(texto);
+        pulaLinha();
+    }
+
+    function calculaIMC(peso,altura) {
+
+        return imc = peso / (altura * altura);
+        
+    }
+
+        var imcTotal =  calculaIMC(103, 1.95)
+        escreva (Math.round(imcTotal));
+
+
+</script>
+<br>
+<br>
+<h1> INTERAGIR COM OS USUÁRIOS: </h1>
+
+<script>
+
+    function pulaLinha() {
+
+        document.write ("<br><br>");
+    }
+
+    function escreva(texto) {
+
+        document.write(texto);
+        pulaLinha();
+    }
+
+    function calculaIMC(peso,altura) {
+
+      return peso / (altura * altura);
+
+    }
+
+    var nome = prompt("Digite seu nome: ");
+    var peso = prompt(nome + " informe seu peso: ");
+    var altura = prompt(nome + " informe sua altura usando . e não ; : ");
+    var imc = calculaIMC(peso,altura);
+
+    escreva(nome + " seu IMC é: " + parseFloat(imc));
+    console.log(imc)
+
+     if (imc < 18.5) { 
+        escreva("Você está MUITO MAGRO!"); 
+    }
+    if (imc >= 18.5 && imc <= 24.9) {
+        escreva("Você está SAUDÁVEL!");
+    }
+    if (imc >= 25.0 && imc <= 29.9) {
+        escreva("Você está com SOBREPESO!");
+    }
+    if (imc >= 30.0 && imc <= 39.9) {
+        escreva("Você está OBESO!");
+    }
+    if (imc >40) {
+        escreva("Você está com OBESIDADE GRAVE!");
+    }
+    escreva("CUIDE DE SUA SAÚDE SEMPRE!")
+
+</script>
+<br>
+<br>
